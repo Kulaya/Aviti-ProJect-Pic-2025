@@ -5,7 +5,7 @@ from PIL import Image
 st.title("Image Display Application")
 
 # Upload the image you want to display
-image_path = "your_image.jpg"  # Replace with the name of your image file
+image_path = "Screenshot from 2024-12-22 17-03-07.png"  # Replace with the name of your image file
 
 try:
     # Load and display the image
