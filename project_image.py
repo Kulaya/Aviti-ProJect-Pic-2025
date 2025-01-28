@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 # Set the title of the application
-st.title("Image Display Application")
+st.title("Simple Solar PV Design Calculator")
 
 # Upload the image you want to display
 image_path = "Screenshot from 2024-12-22 17-03-07.png"  # Replace with the name of your image file
@@ -18,5 +18,6 @@ except FileNotFoundError:
 uploaded_image = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
 if uploaded_image:
     uploaded = Image.open(uploaded_image)
-    st.image(uploaded, caption="Uploaded Image", use_column_width=True)
+    st.image(image, caption="Displayed Image", use_container_width=True)
+
 
